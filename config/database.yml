@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: api_pizzeria_remolo_production
   username: api_pizzeria_remolo
   password: <%= ENV["API_PIZZERIA_REMOLO_DATABASE_PASSWORD"] %>
